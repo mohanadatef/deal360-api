@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b23ae679-ca60-4d8f-9232-d866de7580dd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Wordpress/AgentResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/.styleci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/.styleci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/app/Console/Commands/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/app/Events/Event.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/app/Events/ExampleEvent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/app/Http/Controllers/ExampleController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/app/Http/Middleware/ExampleMiddleware.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/app/Jobs/ExampleJob.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/app/Jobs/Job.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/app/Listeners/ExampleListener.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/artisan" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/bootstrap/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/database/migrations/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/resources/views/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/storage/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/storage/app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/tests/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../roshetta/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/tests/TestCase.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/demo/creative-api/Classes/api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="376" lean-forward="true" selection-start-line="376" selection-end-line="376" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/API/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2917">
+              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/API/TeamsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-27" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="true">
+        <entry file="remoteDeploymentFS://&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/API/PropertiesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6885" />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>floor_plan_image</find>
+      <find>status</find>
+      <find>getPostAvgRate</find>
+      <find>stars</find>
+      <find>post_rate</find>
+      <find>getPostReviews</find>
+      <find>3d-package-images</find>
+      <find>city</find>
+      <find>add_review</find>
+      <find>is_rate</find>
+      <find>revi</find>
+      <find>unset</find>
+      <find>favorite</find>
+      <find>login</find>
+      <find>prperty_typs</find>
+      <find>id</find>
+      <find>search_type</find>
+      <find>num_bed</find>
+      <find>continue</find>
+      <find>property_status</find>
+      <find>stories-number</find>
+      <find>property_bathrooms</find>
+      <find>rent_time</find>
+      <find>rent-time</find>
+      <find>property_city</find>
+      <find>property_price</find>
+      <find>property_size</find>
+      <find>start_price</find>
+      <find>Property_Type</find>
+      <find>upload_image</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/Http/Resources/AgencyResource.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/AgencyResource.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/AgentResource.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/AgentResource.php" />
+        <option value="$PROJECT_DIR$/app/Http/Wordpress/UserWordpress.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Wordpress/FaqsController.php" />
+        <option value="$PROJECT_DIR$/app/Models/Wordpress/OptionWordpress.php" />
+        <option value="$PROJECT_DIR$/app/Models/Wordpress/PostWordpress.php" />
+        <option value="$PROJECT_DIR$/app/Models/Wordpress/TermWordpress.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Wordpress/AgencyController.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/config/database.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Providers/RouteServiceProvider.php" />
+        <option value="$PROJECT_DIR$/config/corcel.php" />
+        <option value="$PROJECT_DIR$/app/Models/Wordpress/TermsWordpress.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/PropertiesResource.php" />
+        <option value="$PROJECT_DIR$/routes/wordperss.php" />
+        <option value="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" />
+        <option value="$PROJECT_DIR$/vendor/jgrossi/corcel/src/Model/User.php" />
+        <option value="$PROJECT_DIR$/app/Models/Wordpress/UserMetaWordpress.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/demo/creative-api/Classes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Wordpress/PackageController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/Wordpress/AgencyResource.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/Wordpress/AgentResource.php" />
+        <option value="$PROJECT_DIR$/app/Models/Wordpress/CommentWordpress.php" />
+        <option value="$PROJECT_DIR$/app/Models/Wordpress/CommentMetaWordpress.php" />
+        <option value="$PROJECT_DIR$/app/Models/Wordpress/PostMetaWordpress.php" />
+        <option value="$PROJECT_DIR$/app/Models/Wordpress/UserWordpress.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/Wordpress/CityResource.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/Wordpress/AgencyController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Wordpress/CityController.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/Wordpress/CityController.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/Wordpress/FaqsController.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/Wordpress/PackageController.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/AgencyResource.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/AgentResource.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/CityResource.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/PropertiesResource.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Wordpress/UserController.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/Wordpress/UserController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/Wordpress/UserResource.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/UserResource.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/Wordpress/ReviewResource.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/Wordpress/PropertiesController.php" />
+        <option value="$PROJECT_DIR$/app/Models/Wordpress/TaxonomyWordpress.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/routes/wordpress.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/Wordpress/PropertiesResource.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Wordpress/PropertiesController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Wordpress/ReviewController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Wordpress/SaveSearchController.php" />
+        <option value="$PROJECT_DIR$/routes/wordpress.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/jgrossi/corcel" />
+      <path value="$PROJECT_DIR$/vendor/thunderer/shortcode" />
+      <path value="$PROJECT_DIR$/vendor/hautelook/phpass" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="22" />
+    <option name="width" value="1370" />
+    <option name="height" value="754" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="example-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="example-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="example-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="example-app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="example-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="example-app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="example-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="example-app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="example-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="example-app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Wordpress" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="example-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="example-app" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\example-app\app\Http\Controllers\Wordpress" />
+      <recent name="C:\xampp\htdocs\example-app\app\Http\Resources\Wordpress" />
+      <recent name="C:\xampp\htdocs\example-app\app\Models\Wordpress" />
+      <recent name="C:\xampp\htdocs\example-app\routes" />
+      <recent name="C:\xampp\htdocs\example-app\app\Http\Resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\example-app\app\Models" />
+      <recent name="C:\xampp\htdocs\example-app\app\Http\Resources\Wordpress" />
+      <recent name="C:\xampp\htdocs\example-app\app\Http\Controllers" />
+      <recent name="C:\xampp\htdocs\example-app\app\Http\Controllers\Wordpress" />
+      <recent name="C:\xampp\htdocs\example-app\app\Http\wordpress" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b23ae679-ca60-4d8f-9232-d866de7580dd" name="Default Changelist" comment="" />
+      <created>1613552967431</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613552967431</updated>
+      <workItem from="1613552968875" duration="91344000" />
+      <workItem from="1613996693408" duration="2887000" />
+      <workItem from="1614001097923" duration="72221000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="166452000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1601467" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32922733" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.32922733" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32922733" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32922733" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info active="true" anchor="right" id="Remote Host" order="4" visible="true" weight="0.15953545" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1601467" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32922733" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.32922733" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32922733" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32922733" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="4" visible="true" weight="0.15953545" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>remoteDeploymentFS://&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/demo/creative-api/Classes/Owner.php</url>
+          <line>124</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>remoteDeploymentFS://&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/demo/creative-api/Classes/Owner.php</url>
+          <line>421</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>remoteDeploymentFS://&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/demo/creative-api/Classes/Owner.php</url>
+          <line>420</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/cors.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1496">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/ImagePropertiesResource.php" />
+    <entry file="file://$PROJECT_DIR$/storage/framework/views/cfe25a9c60839476035311ec84fe69427b472049.php" />
+    <entry file="file://$PROJECT_DIR$/storage/framework/cache/data/03/bc/03bc23b61d4cf128f2bd79541d52e1b98f18c79d">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/jgrossi/corcel/src/Corcel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="840" column="9" selection-start-line="840" selection-start-column="9" selection-end-line="840" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/PackegesResource.php" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Wordpress/OptionWordpress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/corcel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Wordpress/TermRelationshipWordpress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/jgrossi/corcel/src/Concerns/MetaFields.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2839">
+          <caret line="167" column="20" selection-start-line="167" selection-start-column="20" selection-end-line="167" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Wordpress/UserMetaWordpress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/jgrossi/corcel/src/Model/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="58" column="29" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Wordpress/CommentWordpress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Wordpress/CommentMetaWordpress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Wordpress/PostMetaWordpress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Wordpress/TermWordpress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/jgrossi/corcel/src/Model/Taxonomy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/jgrossi/corcel/src/Model/TermRelationship.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/jgrossi/corcel/src/Model/Term.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Wordpress/UserWordpress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/FaqsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/PackageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="36" lean-forward="true" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Wordpress/AgencyResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="66" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Wordpress/AgentResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="47" lean-forward="true" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Wordpress/CityResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Wordpress/UserResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Wordpress/ReviewResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/AgencyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="131" column="121" selection-start-line="131" selection-start-column="109" selection-end-line="131" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="139" column="9" selection-start-line="139" selection-start-column="9" selection-end-line="139" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Wordpress/TaxonomyWordpress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/CityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/jgrossi/corcel/src/Model/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="408" column="22" lean-forward="true" selection-start-line="408" selection-start-column="22" selection-end-line="408" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Wordpress/PostWordpress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Wordpress/PropertiesResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="71" column="77" selection-start-line="71" selection-start-column="44" selection-end-line="71" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/ReviewController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/PropertiesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="701">
+          <caret line="270" column="6" selection-start-line="270" selection-end-line="271" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/wordpress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="59" lean-forward="true" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/SaveSearchController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
