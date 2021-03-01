@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b23ae679-ca60-4d8f-9232-d866de7580dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Wordpress/UserResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Wordpress/UserResource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/jgrossi/corcel" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jgrossi/corcel" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../roshetta/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../roshetta/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/.gitignore" afterDir="false" />
@@ -67,20 +64,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Resources/Wordpress/UserResource.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="38" column="50" lean-forward="true" selection-end-line="59" />
+            <state relative-caret-position="165">
+              <caret line="22" column="54" lean-forward="true" selection-end-line="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/UserController.php">
+      <file pinned="true" current-in-tab="true">
+        <entry file="remoteDeploymentFS://&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/UserResource.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="34" column="44" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="44" />
+            <state relative-caret-position="772">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
             </state>
           </provider>
         </entry>
@@ -164,7 +161,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Wordpress/SaveSearchController.php" />
         <option value="$PROJECT_DIR$/routes/wordpress.php" />
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/routes/wordpress.php" />
-        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/UserResource.php" />
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/ReviewResource.php" />
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/PropertiesResource.php" />
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/CityResource.php" />
@@ -178,6 +174,7 @@
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/Wordpress/ReviewController.php" />
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/Wordpress/UserController.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/Wordpress/UserResource.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/UserResource.php" />
       </list>
     </option>
   </component>
@@ -420,12 +417,12 @@
       <workItem from="1613552968875" duration="91344000" />
       <workItem from="1613996693408" duration="2887000" />
       <workItem from="1614001097923" duration="72221000" />
-      <workItem from="1614428784561" duration="2540000" />
+      <workItem from="1614428784561" duration="3550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168992000" />
+    <option name="totallyTimeSpent" value="170002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -452,7 +449,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="4" weight="0.15953545" />
+      <window_info active="true" anchor="right" id="Remote Host" order="4" visible="true" weight="0.15953545" />
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -805,8 +802,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Resources/Wordpress/UserResource.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="38" column="50" lean-forward="true" selection-end-line="59" />
+        <state relative-caret-position="165">
+          <caret line="22" column="54" lean-forward="true" selection-end-line="59" />
         </state>
       </provider>
     </entry>

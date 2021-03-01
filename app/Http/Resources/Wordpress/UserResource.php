@@ -14,29 +14,29 @@ class UserResource extends JsonResource
      */
     public function toArray($request)
     {
+        $role_name="";
         if(isset($this->meta->user_estate_role))
         {
             if($this->meta->user_estate_role == 0)
             {
-                $this->meta->user_estate_role_name = "user";
+                $role_name = "user";
             }
             elseif($this->meta->user_estate_role == 1)
             {
-                $this->meta->user_estate_role_name = "user";
+                $role_name = "user";
             }
             elseif($this->meta->user_estate_role == 2)
             {
-                $this->meta->user_estate_role_name = "agent";
+                $role_name = "agent";
             }
             elseif($this->meta->user_estate_role == 3)
             {
-                $this->meta->user_estate_role_name = "agency";
+                $role_name = "agency";
             }
             elseif($this->meta->user_estate_role == 4)
             {
-                $this->meta->user_estate_role_name = "developer";
+                $role_name = "developer";
             }
-            $this->meta->user_estate_role_name="";
         }
         return [
             'user_id'=>$this->ID,
@@ -53,7 +53,7 @@ class UserResource extends JsonResource
             "website"=> isset($this->meta->website)? $this->meta->website : "",
             'custom_picture'=>isset($this->meta->custom_picture) ? $this->meta->custom_picture : "",
             'role_id'=>isset($this->meta->user_estate_role) ? $this->meta->user_estate_role : "",
-            'role_name'=>isset($this->meta->user_estate_role_name) ? $this->meta->user_estate_role_name : "",
+            'role_name'=>isset($this->meta->user_estate_role) ? $role_name : "",
         ];
     }
 }
