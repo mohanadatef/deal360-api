@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b23ae679-ca60-4d8f-9232-d866de7580dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Helpers/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/Helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Crm/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Crm/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Crm/PropertiesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Crm/PropertiesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Crm/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Crm/TasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Crm/TeamsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Crm/TeamsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Crm/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Crm/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Wordpress/AgencyResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Wordpress/AgencyResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Taxonomy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/jgrossi/corcel" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jgrossi/corcel" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../roshetta/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../roshetta/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/.gitignore" afterDir="false" />
@@ -72,11 +67,38 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2021_03_01_152358_role.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="14" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2021_03_01_152939_RoleDesc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="1446" column="23" selection-start-line="1446" selection-start-column="23" selection-end-line="1446" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>floor_plan_image</find>
       <find>status</find>
       <find>getPostAvgRate</find>
       <find>stars</find>
@@ -91,7 +113,6 @@
       <find>favorite</find>
       <find>login</find>
       <find>prperty_typs</find>
-      <find>id</find>
       <find>search_type</find>
       <find>num_bed</find>
       <find>continue</find>
@@ -106,6 +127,8 @@
       <find>start_price</find>
       <find>Property_Type</find>
       <find>upload_image</find>
+      <find>id</find>
+      <find>unsigned</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -114,10 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vendor/jgrossi/corcel/src/Model/User.php" />
-        <option value="$PROJECT_DIR$/app/Models/Wordpress/UserMetaWordpress.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Wordpress/PackageController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/Wordpress/AgentResource.php" />
         <option value="$PROJECT_DIR$/app/Models/Wordpress/CommentWordpress.php" />
         <option value="$PROJECT_DIR$/app/Models/Wordpress/CommentMetaWordpress.php" />
         <option value="$PROJECT_DIR$/app/Models/Wordpress/PostMetaWordpress.php" />
@@ -165,6 +184,10 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Crm/TeamsController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Crm/UserController.php" />
         <option value="$PROJECT_DIR$/app/Helpers/Helper.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2021_03_01_152358_role.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2021_03_01_152939_role_desc.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2021_03_01_152939_RoleDesc.php" />
       </list>
     </option>
   </component>
@@ -301,6 +324,17 @@
               <item name="deal360" type="b2602c69:ProjectViewProjectNode" />
               <item name="deal360" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="deal360" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deal360" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deal360" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deal360" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -328,11 +362,11 @@
       <recent name="C:\xampp\htdocs\example-app\app\Http\wordpress" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\deal360\database\migrations\Acl" />
       <recent name="C:\xampp\htdocs\deal360\app\Http\Controllers\Crm" />
       <recent name="C:\xampp\htdocs\deal360\routes" />
       <recent name="C:\xampp\htdocs\deal360\app\Http\Controllers\Mobile" />
       <recent name="C:\xampp\htdocs\example-app\app\Http\Controllers\Wordpress" />
-      <recent name="C:\xampp\htdocs\example-app\app\Http\Resources\Wordpress" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -367,15 +401,16 @@
       <workItem from="1613996693408" duration="2887000" />
       <workItem from="1614001097923" duration="72221000" />
       <workItem from="1614428784561" duration="7166000" />
-      <workItem from="1614601813837" duration="6599000" />
+      <workItem from="1614601813837" duration="9927000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180217000" />
+    <option name="totallyTimeSpent" value="183545000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16381419" />
@@ -450,48 +485,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/jgrossi/corcel/src/Model/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="58" column="29" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Wordpress/CommentWordpress.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Wordpress/CommentMetaWordpress.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Wordpress/PostMetaWordpress.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Wordpress/TermWordpress.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/jgrossi/corcel/src/Model/Taxonomy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/jgrossi/corcel/src/Model/TermRelationship.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -725,13 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Crm/PostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="51" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Crm/PropertiesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -764,6 +750,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="58" lean-forward="true" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Crm/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/Acl/2014_10_12_100000_create_password_resets_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2021_03_01_152358_role.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="14" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="1446" column="23" selection-start-line="1446" selection-start-column="23" selection-end-line="1446" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2021_03_01_152939_RoleDesc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
         </state>
       </provider>
     </entry>
