@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Wordpress;
 
 use App\Http\Resources\Wordpress\UserResource;
+use App\Models\Wordpress\PostMetaWordpress;
+use App\Models\Wordpress\PostWordpress;
 use App\Models\Wordpress\UserMetaWordpress;
 use App\Models\Wordpress\UserWordpress;
 use Illuminate\Http\Request;
@@ -11,11 +13,12 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
-    protected $user, $user_meta;
+    protected $user, $user_meta,$post;
 
-    public function __construct(UserWordpress $user, UserMetaWordpress $user_meta)
+    public function __construct(UserWordpress $user, UserMetaWordpress $user_meta,PostWordpress $post)
     {
         $this->user = $user;
+        $this->post = $post;
         $this->user_meta = $user_meta;
     }
 
@@ -43,6 +46,31 @@ class UserController extends Controller
             $user_meta->user_id = $this->user->ID;
             $user_meta->meta_key = $key;
             $user_meta->meta_value = $value;
+            $user_meta->save();
+        }
+        if($request->user_type == 3)
+        {
+            $this->post->post_author = $this->user->ID;
+            $this->post->post_title = $request->first_name;
+            $this->post->post_type = 'estate_agency';
+            $this->post->post_name = $request->username;
+            $this->post->save();
+            $user_meta = new PostMetaWordpress();
+            $user_meta->post_id = $this->post->ID;
+            $user_meta->meta_key = 'user_meda_id';
+            $user_meta->meta_value = $this->user->ID;
+            $user_meta->save();
+        }elseif($request->user_type == 2)
+        {
+            $this->post->post_author = $this->user->ID;
+            $this->post->post_title = $request->first_name;
+            $this->post->post_type = 'estate_agent';
+            $this->post->post_name = $request->username;
+            $this->post->save();
+            $user_meta = new PostMetaWordpress();
+            $user_meta->post_id = $this->post->ID;
+            $user_meta->meta_key = 'user_meda_id';
+            $user_meta->meta_value = $this->user->ID;
             $user_meta->save();
         }
         return response(['status' => 1, 'data' => new UserResource($this->user), 'message' => 'successful'], 200);

@@ -24,11 +24,14 @@ Route::prefix('/package')->group(function () {
 
 Route::prefix('/properties')->group(function () {
     Route::get('/index_type', [PropertiesController::class, 'index_type']);
-    Route::get('/index_favorites', [PropertiesController::class, 'index_favorites']);
     Route::get('/show', [PropertiesController::class, 'show']);
-    Route::post('/store_favorites', [PropertiesController::class, 'store_favorites']);
     Route::get('/properties_type', [PropertiesController::class, 'properties_type']);
     Route::get('/search', [PropertiesController::class, 'search']);
+});
+
+Route::prefix('/favorites')->group(function () {
+    Route::get('/index', [FavoritesController::class, 'index']);
+    Route::post('/store', [FavoritesController::class, 'store']);
 });
 
 Route::prefix('/user')->group(function () {
