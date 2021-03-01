@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Post as Post;
+use App\Models\Wordpress\PostWordpress;
 use App\Models\Tasks;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
@@ -9,11 +9,11 @@ if (!function_exists('getProperty')) {
     function getProperty($id='',$lang='',$num='',$ids=[],$status='',$user_id='',$tasks=false,$userRole='')
     {
         // Get a custom meta value (like 'link' or whatever) from a post (any type)
-//        $post = Post::find(37703);
-//        $posts = Post::published()->type('estate_property')->get()
+//        $post = PostWordpress::find(37703);
+//        $posts = PostWordpress::published()->type('estate_property')->get()
         $data=array();
         $pages=array();
-        $posts = Post::type('estate_property')
+        $posts = PostWordpress::type('estate_property')
             ->leftJoin('icl_translations','icl_translations.element_id','posts.ID');
         if(isset($lang) and !empty($lang)){
             $posts->where('icl_translations.language_code',$lang);

@@ -4,12 +4,12 @@ namespace App\Http\Controllers\Crm;
 
 use App\Http\Controllers\Controller;
 use App\Models\Tasks;
+use App\Models\Wordpress\PostWordpress;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Validator;
 use DB;
-use App\Models\Post as Post;
 class UserController extends Controller
 {
     public $successStatus = 200;
@@ -18,6 +18,14 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    protected $tasks,$user,$post;
+
+    public function __construct(Tasks $tasks,User $user,PostWordpress $post)
+    {
+        $this->tasks = $tasks;
+        $this->user = $user;
+        $this->post = $post;
+    }
 
     public function login(){
         if(Auth::attempt(['username' => request('username'), 'password' => request('password')])){
@@ -26,20 +34,20 @@ class UserController extends Controller
             $user->token=$token;
             $user->role_name=DB::table('role_desc')->where('language_id',1)->select('name')->where('role_id',$user->role_id)->first()->name;
             if($user->role_id==1){
-                $inProgress=Tasks::where('current_status_id',2)->count();
-                $All_inProgress=Tasks::where('current_status_id',2)->distinct()->count('wp_post_id');
-                $expired=Tasks::where('current_status_id',3)->distinct()->count('wp_post_id');
-                $pending=Post::type('estate_property')->where('post_status','pending')->count();
+                $inProgress=$this->tasks->where('current_status_id',2)->count();
+                $All_inProgress=$this->tasks->where('current_status_id',2)->distinct()->count('wp_post_id');
+                $expired=$this->tasks->where('current_status_id',3)->distinct()->count('wp_post_id');
+                $pending=$this->post->type('estate_property')->where('post_status','pending')->count();
 
                 $user->inProgress=$inProgress;
                 $user->expired=$expired;
                 $user->pending=($pending-$expired-$All_inProgress);
-                $user->completed=Post::type('estate_property')->published()->count();
+                $user->completed=$this->post->type('estate_property')->published()->count();
             }else{
-                $user->pending=Tasks::where('current_status_id',1)->where('users_id',$user->id)->count();
-                $user->inProgress=Tasks::where('current_status_id',2)->where('users_id',$user->id)->count();
-                $user->expired=Tasks::where('current_status_id',3)->where('users_id',$user->id)->count();
-                $user->completed=Tasks::where('current_status_id',4)->where('users_id',$user->id)->count();
+                $user->pending=$this->tasks->where('current_status_id',1)->where('users_id',$user->id)->count();
+                $user->inProgress=$this->tasks->where('current_status_id',2)->where('users_id',$user->id)->count();
+                $user->expired=$this->tasks->where('current_status_id',3)->where('users_id',$user->id)->count();
+                $user->completed=$this->tasks->where('current_status_id',4)->where('users_id',$user->id)->count();
             }
             $data=array('status'=>1,'data'=>$user,'message'=>'Successful');
             $code=200;
@@ -72,7 +80,7 @@ class UserController extends Controller
         $input = $request->all();
         $input['password'] = bcrypt($input['password']);
         $input['name']=$input['username'];
-        $user = User::create($input);
+        $user = $this->user->create($input);
         $token =  $user->createToken('CRM-Crm')-> accessToken;
         $user->token=$token;
         $user->role_name=DB::table('role_desc')->where('language_id',1)->select('name')->where('role_id',$user->role_id)->first()->name;
@@ -89,27 +97,27 @@ class UserController extends Controller
     {
         if (isset($request->user_id) and !empty($request->user_id)){
             $userId=$request->user_id;
-            $user = User::find($userId);
+            $user = $this->user->find($userId);
         }else{
             $user = Auth::user();
             $userId=$user->id;
         }
         $user->role_name=DB::table('role_desc')->where('language_id',1)->select('name')->where('role_id',$user->role_id)->first()->name;
         if($user->role_id==1){
-            $inProgress=Tasks::where('current_status_id',2)->count();
-            $All_inProgress=Tasks::where('current_status_id',2)->distinct()->count('wp_post_id');
-            $expired=Tasks::where('current_status_id',3)->distinct()->count('wp_post_id');
-            $pending=Post::type('estate_property')->where('post_status','pending')->count();
+            $inProgress=$this->tasks->where('current_status_id',2)->count();
+            $All_inProgress=$this->tasks->where('current_status_id',2)->distinct()->count('wp_post_id');
+            $expired=$this->tasks->where('current_status_id',3)->distinct()->count('wp_post_id');
+            $pending=$this->post->type('estate_property')->where('post_status','pending')->count();
 
             $user->inProgress=$inProgress;
             $user->expired=$expired;
             $user->pending=($pending-$expired-$All_inProgress);
-            $user->completed=Post::type('estate_property')->published()->count();
+            $user->completed=$this->post->type('estate_property')->published()->count();
         }else{
-            $user->pending=Tasks::where('current_status_id',1)->where('users_id',$userId)->count();
-            $user->inProgress=Tasks::where('current_status_id',2)->where('users_id',$userId)->count();
-            $user->expired=Tasks::where('current_status_id',3)->where('users_id',$userId)->count();
-            $user->completed=Tasks::where('current_status_id',4)->where('users_id',$userId)->count();
+            $user->pending=$this->tasks->where('current_status_id',1)->where('users_id',$userId)->count();
+            $user->inProgress=$this->tasks->where('current_status_id',2)->where('users_id',$userId)->count();
+            $user->expired=$this->tasks->where('current_status_id',3)->where('users_id',$userId)->count();
+            $user->completed=$this->tasks->where('current_status_id',4)->where('users_id',$userId)->count();
         }
 
         $data=array('status'=>1,'data'=>$user,'message'=>'Successful');
@@ -139,27 +147,27 @@ class UserController extends Controller
         }else{
             $userId = Auth::id();
         }
-        $user = User::findOrFail($userId);
+        $user = $this->user->findOrFail($userId);
 
         $data = $request->all();
         $user->update($data);
         //mohanad role_name
         $user->role_name=DB::table('role_desc')->where('language_id',1)->select('name')->first()->name;
         if($user->role_id==1){
-            $inProgress=Tasks::where('current_status_id',2)->count();
-            $All_inProgress=Tasks::where('current_status_id',2)->distinct()->count('wp_post_id');
-            $expired=Tasks::where('current_status_id',3)->distinct()->count('wp_post_id');
-            $pending=Post::type('estate_property')->where('post_status','pending')->count();
+            $inProgress=$this->tasks->where('current_status_id',2)->count();
+            $All_inProgress=$this->tasks->where('current_status_id',2)->distinct()->count('wp_post_id');
+            $expired=$this->tasks->where('current_status_id',3)->distinct()->count('wp_post_id');
+            $pending=$this->post->type('estate_property')->where('post_status','pending')->count();
 
             $user->inProgress=$inProgress;
             $user->expired=$expired;
             $user->pending=($pending-$expired-$All_inProgress);
-            $user->completed=Post::type('estate_property')->published()->count();
+            $user->completed=$this->post->type('estate_property')->published()->count();
         }else{
-            $user->pending=Tasks::where('current_status_id',1)->where('users_id',$user->id)->count();
-            $user->inProgress=Tasks::where('current_status_id',2)->where('users_id',$user->id)->count();
-            $user->expired=Tasks::where('current_status_id',3)->where('users_id',$user->id)->count();
-            $user->completed=Tasks::where('current_status_id',4)->where('users_id',$user->id)->count();
+            $user->pending=$this->tasks->where('current_status_id',1)->where('users_id',$user->id)->count();
+            $user->inProgress=$this->tasks->where('current_status_id',2)->where('users_id',$user->id)->count();
+            $user->expired=$this->tasks->where('current_status_id',3)->where('users_id',$user->id)->count();
+            $user->completed=$this->tasks->where('current_status_id',4)->where('users_id',$user->id)->count();
         }
         // Redirect to route
         $data=array('status'=>1,'data'=>$user,'message'=>'Successful');
@@ -185,7 +193,7 @@ class UserController extends Controller
         }else{
             $userId = Auth::id();
         }
-        $user = User::findOrFail($userId);
+        $user = $this->user->findOrFail($userId);
 
         $data = $request->all();
         $data['password'] = bcrypt($data['password']);
@@ -213,7 +221,7 @@ class UserController extends Controller
                 }else{
                     $userId = Auth::id();
                 }
-                $user = User::findOrFail($userId);
+                $user = $this->user->findOrFail($userId);
                 $data = $request->all();
                 $data['image'] = 'images/users/profile/'.$png_url;
                 $user->update($data);

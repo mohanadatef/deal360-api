@@ -2,14 +2,20 @@
 
 namespace App\Http\Controllers\Crm;
 
-use Illuminate\Http\Request;
-use App\Models\Post as Post;
+use App\Models\Wordpress\PostWordpress;
 use App\Http\Controllers\Controller;
 
 class PostController extends Controller
 {
+    protected $post;
+
+    public function __construct(PostWordpress $post)
+    {
+        $this->post = $post;
+    }
+
     public function getAllPosts(){
-        $posts = Post::published()->where('post_type','estate_property')->orderBy('ID','DESC')->get();
+        $posts = $this->post->published()->where('post_type','estate_property')->orderBy('ID','DESC')->get();
 //        foreach ($posts as $post){
 //            echo $post->meta->link;
 //        }

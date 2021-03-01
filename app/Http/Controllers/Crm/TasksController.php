@@ -10,9 +10,17 @@ use DB;
 
 class TasksController extends Controller
 {
+
+    protected $tasks;
+
+    public function __construct(Tasks $tasks)
+    {
+        $this->tasks = $tasks;
+    }
+
     //chanage permater id to request & add role name to array mohanad
     public function getPropertiesTasks(Request $request){
-        $tasks=Tasks::where('wp_post_id',$request->id)
+        $tasks=$this->tasks->where('wp_post_id',$request->id)
             ->leftJoin('users','users.id','tasks.users_id')
             ->leftJoin('role_desc','users.role_id','role_desc.role_id')
             ->where('role_desc.language_id','1')
@@ -34,14 +42,14 @@ class TasksController extends Controller
             $code=401;
             return response()->json($data,$code);
         }
-        $tasksCount=Tasks::where('users_id',$request->users_id)->where('wp_post_id',$request->post_id)->count();
+        $tasksCount=$this->tasks->where('users_id',$request->users_id)->where('wp_post_id',$request->post_id)->count();
         if($tasksCount==0){
             if (empty($request->status_id)){
                 $status_id=1;
             }else{
                 $status_id=$request->status_id;
             }
-            $task_id=Tasks::insertGetId([
+            $task_id=$this->tasks->insertGetId([
                 'users_id'=>$request->users_id,
                 'wp_post_id'=>$request->post_id,
                 'current_status_id'=>$status_id,
@@ -71,7 +79,7 @@ class TasksController extends Controller
             $code=401;
             return response()->json($data,$code);
         }
-        Tasks::where('wp_post_id',$request->post_id)->where('users_id',$request->users_id)
+        $this->tasks->where('wp_post_id',$request->post_id)->where('users_id',$request->users_id)
             ->update([
                 'current_status_id'=>$request->status_id,
             ]);
@@ -94,7 +102,7 @@ class TasksController extends Controller
             $code=401;
             return response()->json($data,$code);
         }
-        $tasks = Tasks::where('users_id',$request->users_id)->where('wp_post_id',$request->wp_post_id)->delete();
+        $tasks = $this->tasks->where('users_id',$request->users_id)->where('wp_post_id',$request->wp_post_id)->delete();
         $data=array('status'=>1,'data'=>array(),'message'=>'Success.');
         $code=200;
         return response()->json($data,$code);
