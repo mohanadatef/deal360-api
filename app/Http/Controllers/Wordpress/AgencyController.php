@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\Wordpress;
 
+use App\Http\Resources\Wordpress\AgencyCrmResource;
 use App\Http\Resources\Wordpress\AgencyResource;
+use App\Http\Resources\Wordpress\AgentCrmResource;
 use App\Http\Resources\Wordpress\AgentResource;
 use App\Models\Wordpress\OptionWordpress;
 use App\Models\Wordpress\PostWordpress;
@@ -39,7 +41,7 @@ class AgencyController extends Controller
             $myagency->post_meta = $this->post->find($myagency->meta->user_agent_id);
             array_push($agent_id, $myagency->ID);
             $myagency->properties = $this->post->published()->leftJoin('icl_translations', 'icl_translations.element_id', 'posts.ID')
-                ->where('icl_translations.language_code', $request->lang)->where('post_author', '!=', 0)->wherein('post_author', $agent_id)->paginate(10);
+                ->where('icl_translations.language_code', $request->lang)->where('post_type','estate_property')->where('post_author', '!=', 0)->wherein('post_author', $agent_id)->paginate(10);
             foreach ($myagency->properties as $properties) {
                 $properties->favorites = $this->option->where('option_name', 'favorites' . $request->user_id)->select('option_value')->first();
                 if (isset($properties->favorites)) {
@@ -72,7 +74,7 @@ class AgencyController extends Controller
             $agency->post_meta = $this->post->find($agency->meta->user_agent_id);
             array_push($agent_id, $agency->ID);
             $agency->properties = $this->post->published()->Join('icl_translations', 'icl_translations.element_id', 'posts.ID')
-                ->where('icl_translations.language_code', $request->lang)->where('post_author', '!=', 0)->wherein('post_author', $agent_id)->inRandomOrder()->first();
+                ->where('icl_translations.language_code', $request->lang)->where('post_type','estate_property')->where('post_author', '!=', 0)->wherein('post_author', $agent_id)->inRandomOrder()->first();
             if ($agency->properties) {
                 $agency->properties->favorites = $this->option->where('option_name', 'favorites' . $request->user_id)->select('option_value')->first();
                 if (isset($agency->properties->favorites)) {
@@ -89,7 +91,7 @@ class AgencyController extends Controller
             }
             if($agency->meta->user_estate_role == 3)
             {
-            return response()->json(['status' => 1, 'data' => new AgencyResource($agency), 'message' => 'Message_Done']);
+                return response()->json(['status' => 1, 'data' => new AgencyResource($agency), 'message' => 'Message_Done']);
             }
             elseif($agency->meta->user_estate_role == 2)
             {
@@ -113,7 +115,7 @@ class AgencyController extends Controller
             $agency->post_meta = $this->post->find($agency->meta->user_agent_id);
             array_push($agent_id, $agency->ID);
             $agency->properties = $this->post->published()->Join('icl_translations', 'icl_translations.element_id', 'posts.ID')
-                ->where('icl_translations.language_code', $request->lang)->where('post_author', '!=', 0)->wherein('post_author', $agent_id)->paginate(10);
+                ->where('icl_translations.language_code', $request->lang)->where('post_type','estate_property')->where('post_author', '!=', 0)->wherein('post_author', $agent_id)->paginate(10);
             foreach ($agency->properties as $properties) {
                 $properties->favorites = $this->option->where('option_name', 'favorites' . $request->user_id)->select('option_value')->first();
                 if (isset($properties->favorites)) {
@@ -137,5 +139,32 @@ class AgencyController extends Controller
             }
         }
         return response()->json(['status' => 0, 'data' => array(), 'message' => 'id not found']);
+    }
+
+    public function all_agency()
+    {
+        $agency = $this->user->whereHas('meta', function (Builder $query) {
+            $query->where('meta_key', 'current_agent_list');
+        })->whereHas('meta', function (Builder $query) {
+            $query->where('meta_key', 'user_estate_role')
+                ->where('meta_value', '3');
+        })->get();
+        foreach ($agency as $myagency) {
+            $agent_id = unserialize($myagency->meta->current_agent_list);
+            $myagency->post_meta = $this->post->find($myagency->meta->user_agent_id);
+            array_push($agent_id, $myagency->ID);
+            $myagency->properties_count = $this->post->leftJoin('icl_translations', 'icl_translations.element_id', 'posts.ID')
+                ->where('icl_translations.language_code', 'en')->where('post_type','estate_property')->where('post_author', '!=', 0)->wherein('post_author', $agent_id)->count();
+        }
+        return response()->json(['status' => 1, 'data' => AgencyCrmResource::collection($agency), 'message' => 'Message_Logout']);
+    }
+
+    public function all_agent()
+    {
+        $agency = $this->user->whereHas('meta', function (Builder $query) {
+            $query->where('meta_key', 'user_estate_role')
+                ->where('meta_value', '2');
+        })->get();
+        return response()->json(['status' => 1, 'data' => AgentCrmResource::collection($agency), 'message' => 'Message_Logout']);
     }
 }

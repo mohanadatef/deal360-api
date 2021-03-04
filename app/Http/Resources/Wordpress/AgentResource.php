@@ -15,7 +15,11 @@ class AgentResource extends JsonResource
      */
     public function toArray($request)
     {
-        $properties=PostWordpress::published()->where('post_author','!=',0)->where('post_author',$this->ID)->count();
+        if (!isset($request->lang)) {
+            $request->lang = 'en';
+        }
+        $properties=PostWordpress::published()->leftJoin('icl_translations', 'icl_translations.element_id', 'posts.ID')
+            ->where('icl_translations.language_code', $request->lang)->where('post_author','!=',0)->where('post_author',$this->ID)->where('post_type','estate_property')->count();
         return [
             'ID' => $this->ID,
             'full_name' => $this->meta->first_name .' '.$this->meta->last_name,

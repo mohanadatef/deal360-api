@@ -8,9 +8,11 @@ Route::prefix('/agency')->group(function () {
     Route::get('/index', [AgencyController::class, 'index']);
     Route::get('/index_properties', [AgencyController::class, 'index_properties']);
     Route::get('/show', [AgencyController::class, 'show']);
+    Route::get('/all', [AgencyController::class, 'all_agency']);
 });
 
 Route::prefix('/agent')->group(function () {
+    Route::get('/index', [AgencyController::class, 'all_agent']);
     Route::get('/index_properties', [AgencyController::class, 'index_properties']);
     Route::get('/show', [AgencyController::class, 'show']);
 });
@@ -27,11 +29,8 @@ Route::prefix('/properties')->group(function () {
     Route::get('/show', [PropertiesController::class, 'show']);
     Route::get('/properties_type', [PropertiesController::class, 'properties_type']);
     Route::get('/search', [PropertiesController::class, 'search']);
-});
-
-Route::prefix('/favorites')->group(function () {
-    Route::get('/index', [FavoritesController::class, 'index']);
-    Route::post('/store', [FavoritesController::class, 'store']);
+    Route::get('/index_favorites', [PropertiesController::class, 'index_favorites']);
+    Route::post('/store_favorites', [PropertiesController::class, 'store_favorites']);
 });
 
 Route::prefix('/user')->group(function () {
