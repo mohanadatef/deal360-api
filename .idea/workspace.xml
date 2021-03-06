@@ -4,9 +4,7 @@
     <list default="true" id="b23ae679-ca60-4d8f-9232-d866de7580dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Wordpress/AgencyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Wordpress/AgencyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Wordpress/FavoritesController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Wordpress/PropertiesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Wordpress/PropertiesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Wordpress/AgentResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Wordpress/AgentResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Wordpress/AgentCrmResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Wordpress/AgentCrmResource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/wordpress.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/wordpress.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/jgrossi/corcel" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jgrossi/corcel" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../roshetta/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/.env.example" afterDir="false" />
@@ -70,20 +68,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="true" current-in-tab="true">
+      <file pinned="true" current-in-tab="false">
         <entry file="remoteDeploymentFS://&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/API/PropertiesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="480" column="50" lean-forward="true" selection-start-line="480" selection-start-column="50" selection-end-line="480" selection-end-column="50" />
+            <state relative-caret-position="362">
+              <caret line="486" column="54" lean-forward="true" selection-start-line="486" selection-start-column="54" selection-end-line="486" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/Wordpress/AgencyController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="639">
+              <caret line="176" column="66" selection-start-line="176" selection-start-column="66" selection-end-line="176" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/routes/wordpress.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="772">
+              <caret line="50" column="3" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/CityController.php">
+        <entry file="file://$PROJECT_DIR$/routes/wordpress.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="374">
+              <caret line="22" column="43" lean-forward="true" selection-end-line="50" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/AgencyController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="709">
+              <caret line="177" column="5" lean-forward="true" selection-start-line="170" selection-start-column="4" selection-end-line="177" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Resources/Wordpress/AgentCrmResource.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/AgencyResource.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="81" lean-forward="true" selection-start-line="25" selection-start-column="81" selection-end-line="25" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/AgentCrmResource.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="true">
+        <entry file="remoteDeploymentFS://&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/API/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="62" column="37" lean-forward="true" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/AgencyCrmResource.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -130,7 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Models/Wordpress/UserWordpress.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Mobile/UserController.php" />
         <option value="$PROJECT_DIR$/routes/mobile.php" />
@@ -167,19 +236,20 @@
         <option value="$PROJECT_DIR$/database/migrations/Country.php" />
         <option value="$PROJECT_DIR$/database/migrations/Language.php" />
         <option value="$PROJECT_DIR$/database/migrations/AreaDesc.php" />
-        <option value="$PROJECT_DIR$/routes/wordpress.php" />
-        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/routes/wordpress.php" />
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/AgentResource.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/Wordpress/AgentResource.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Wordpress/PropertiesController.php" />
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/Wordpress/PropertiesController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/Wordpress/AgentCrmResource.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/Wordpress/AgencyCrmResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Wordpress/AgencyController.php" />
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/AgencyCrmResource.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/Wordpress/AgencyResource.php" />
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/AgencyResource.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/API/PropertiesController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Wordpress/AgencyController.php" />
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/Wordpress/AgencyController.php" />
+        <option value="$PROJECT_DIR$/routes/wordpress.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/routes/wordpress.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/Wordpress/AgentCrmResource.php" />
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/AgentCrmResource.php" />
       </list>
     </option>
@@ -442,19 +512,19 @@
       <workItem from="1613996693408" duration="2887000" />
       <workItem from="1614001097923" duration="72221000" />
       <workItem from="1614428784561" duration="7166000" />
-      <workItem from="1614601813837" duration="20583000" />
+      <workItem from="1614601813837" duration="23969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194201000" />
+    <option name="totallyTimeSpent" value="197587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16381419" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16381419" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -474,7 +544,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="4" visible="true" weight="0.15953545" />
+      <window_info active="true" anchor="right" id="Remote Host" order="4" visible="true" weight="0.15953545" />
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -731,13 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/wordpress.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="31" column="85" selection-end-line="47" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/jgrossi/corcel/src/Model/Post.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -782,13 +845,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/AgencyController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="5" lean-forward="true" selection-end-line="170" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Resources/Wordpress/AgencyCrmResource.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -817,17 +873,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Wordpress/AgentCrmResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/CityController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/AgencyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="709">
+          <caret line="177" column="5" lean-forward="true" selection-start-line="170" selection-start-column="4" selection-end-line="177" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/wordpress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="43" lean-forward="true" selection-end-line="50" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Wordpress/AgentCrmResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>

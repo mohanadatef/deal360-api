@@ -16,6 +16,9 @@ Route::prefix('/agent')->group(function () {
     Route::get('/index_properties', [AgencyController::class, 'index_properties']);
     Route::get('/show', [AgencyController::class, 'show']);
 });
+Route::prefix('/user')->group(function () {
+    Route::get('/all', [AgencyController::class, 'all_user']);
+});
 
 Route::prefix('/city')->group(function () {
     Route::get('/index', [CityController::class, 'index']);

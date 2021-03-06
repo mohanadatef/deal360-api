@@ -22,7 +22,7 @@ class AgentCrmResource extends JsonResource
             ->where('icl_translations.language_code', $request->lang)->where('post_author','!=',0)->where('post_author',$this->ID)->where('post_type','estate_property')->count();
         return [
             'ID' => $this->ID,
-            'name' => $this->meta->first_name .' '.$this->meta->last_name,
+            'name' => $this->user_nicename,
             'count_listing' => $properties ? $properties : 0,
         ];
     }

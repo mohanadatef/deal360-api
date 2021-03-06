@@ -167,4 +167,13 @@ class AgencyController extends Controller
         })->get();
         return response()->json(['status' => 1, 'data' => AgentCrmResource::collection($agency), 'message' => 'Message_Logout']);
     }
+
+    public function all_user()
+    {
+        $agency = $this->user->whereHas('meta', function (Builder $query) {
+            $query->where('meta_key', 'user_estate_role')
+                ->where('meta_value', '1');
+        })->get();
+        return response()->json(['status' => 1, 'data' => AgentCrmResource::collection($agency), 'message' => 'Message_Logout']);
+    }
 }
