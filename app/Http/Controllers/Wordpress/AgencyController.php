@@ -34,6 +34,9 @@ class AgencyController extends Controller
         })->whereHas('meta', function (Builder $query) {
             $query->where('meta_key', 'user_estate_role')
                 ->where('meta_value', '3');
+        })->whereHas('meta', function (Builder $query) {
+            $query->where('meta_key', 'account_status')
+                ->where('meta_value', 'approved');
         })->get();
         foreach ($agency as $myagency) {
             $agent_id = unserialize($myagency->meta->current_agent_list);
@@ -148,6 +151,9 @@ class AgencyController extends Controller
         })->whereHas('meta', function (Builder $query) {
             $query->where('meta_key', 'user_estate_role')
                 ->where('meta_value', '3');
+        })->whereHas('meta', function (Builder $query) {
+            $query->where('meta_key', 'account_status')
+                ->where('meta_value', 'approved');
         })->get();
         foreach ($agency as $myagency) {
             $agent_id = unserialize($myagency->meta->current_agent_list);
@@ -164,6 +170,9 @@ class AgencyController extends Controller
         $agency = $this->user->whereHas('meta', function (Builder $query) {
             $query->where('meta_key', 'user_estate_role')
                 ->where('meta_value', '2');
+        })->whereHas('meta', function (Builder $query) {
+            $query->where('meta_key', 'account_status')
+                ->where('meta_value', 'approved');
         })->get();
         return response()->json(['status' => 1, 'data' => AgentCrmResource::collection($agency), 'message' => 'Message_Logout']);
     }
