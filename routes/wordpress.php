@@ -49,3 +49,7 @@ Route::prefix('/review')->group(function () {
 Route::prefix('/save_search')->group(function () {
     Route::get('/delete', [SaveSearchController::class, 'delete']);
 });
+
+Route::prefix('/test')->group(function () {
+    Route::get('/test', [SaveSearchController::class, 'test_api']);
+});

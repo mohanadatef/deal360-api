@@ -27,4 +27,15 @@ class SaveSearchController extends Controller
         }
         return response()->json(['status' => '0', 'data' => array(), 'message' => 'Post ID does not exists or was deleted'], 400);
     }
+
+    public function test_api()
+    {
+        $handle = curl_init();
+        $url = "http://localhost:8080/deal360/wordpres0s/agency/all";
+        curl_setopt($handle, CURLOPT_URL, $url);
+        curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
+        $output = json_decode(curl_exec($handle));
+        curl_close($handle);
+        return $output->data;
+    }
 }
