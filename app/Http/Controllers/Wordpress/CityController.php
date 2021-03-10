@@ -3,20 +3,13 @@
 namespace App\Http\Controllers\Wordpress;
 
 use App\Http\Resources\Wordpress\CityResource;
-use App\Models\Wordpress\OptionWordpress;
-use App\Models\Wordpress\TermWordpress;
+use App\Traits\CoreData;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
 class CityController extends Controller
 {
-    protected $term,$option;
-
-    public function __construct(TermWordpress $term,OptionWordpress $option)
-    {
-        $this->term = $term;
-        $this->option = $option;
-    }
+    use CoreData;
 
     public function index(Request $request)
     {

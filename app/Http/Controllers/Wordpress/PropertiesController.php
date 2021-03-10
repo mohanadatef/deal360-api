@@ -3,25 +3,14 @@
 namespace App\Http\Controllers\Wordpress;
 
 use App\Http\Resources\Wordpress\PropertiesResource;
-use App\Models\Wordpress\OptionWordpress;
-use App\Models\Wordpress\PostWordpress;
-use App\Models\Wordpress\TermWordpress;
-use App\Models\Wordpress\UserWordpress;
+use App\Traits\CoreData;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 
 class PropertiesController extends Controller
 {
-    protected $post, $option, $user, $term;
-
-    public function __construct(PostWordpress $post, OptionWordpress $option, UserWordpress $user, TermWordpress $term)
-    {
-        $this->post = $post;
-        $this->option = $option;
-        $this->user = $user;
-        $this->term = $term;
-    }
+    use CoreData;
 
     public function index_type(Request $request)
     {
@@ -63,7 +52,7 @@ class PropertiesController extends Controller
         }
         $properties = $this->post->published()->Join('icl_translations', 'icl_translations.element_id', 'posts.ID')
             ->where('icl_translations.language_code', $request->lang)->Join('term_relationships', 'term_relationships.object_id', 'posts.ID')
-            ->where('term_relationships.term_taxonomy_id', $id_type)->where('post_author', '!=', 0)->where('post_type','estate_property')->inRandomOrder()->paginate(10);
+            ->where('term_relationships.term_taxonomy_id', $id_type)->where('post_author', '!=', 0)->where('post_type', 'estate_property')->inRandomOrder()->paginate(10);
         foreach ($properties as $propertiess) {
             $propertiess->favorites = $this->option->where('option_name', 'favorites' . $request->user_id)->select('option_value')->first();
             if (isset($propertiess->favorites)) {
@@ -90,7 +79,7 @@ class PropertiesController extends Controller
             if (isset($favoritess)) {
                 $user_favorites = unserialize($favoritess->option_value);
                 $properties = $this->post->published()->Join('icl_translations', 'icl_translations.element_id', 'posts.ID')
-                    ->where('icl_translations.language_code', $request->lang)->where('post_type','estate_property')->wherein('ID', $user_favorites)->get();
+                    ->where('icl_translations.language_code', $request->lang)->where('post_type', 'estate_property')->wherein('ID', $user_favorites)->get();
                 foreach ($properties as $propertiess) {
                     $propertiess->favorites = 1;
                 }
@@ -215,7 +204,7 @@ class PropertiesController extends Controller
         $properties = $this->post->published()
             ->Join('icl_translations', 'icl_translations.element_id', 'posts.ID')
             ->where('icl_translations.language_code', $request->lang)
-            ->where('post_author', '!=', 0)->where('post_type','estate_property')->inRandomOrder()->paginate(10);
+            ->where('post_author', '!=', 0)->where('post_type', 'estate_property')->inRandomOrder()->paginate(10);
         $i = 0;
         foreach ($properties as $propertiess) {
             if ($request->property_status && isset($propertiess->terms["property_status"]) && array_values($propertiess->terms["property_status"])[0] != $request->property_status) {

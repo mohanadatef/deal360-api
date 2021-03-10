@@ -2,7 +2,6 @@
 
 namespace App\Http\Resources\Wordpress;
 
-use App\Traits\ExampleCode;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class AgencyResource extends JsonResource

@@ -5,14 +5,14 @@ namespace App\Http\Controllers\Wordpress;
 use App\Http\Resources\Wordpress\AgencyCrmResource;
 use App\Http\Resources\Wordpress\AgentCrmResource;
 use App\Http\Resources\Wordpress\AgentResource;
-use App\Traits\ExampleCode;
+use App\Traits\CoreData;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
 class AgencyController extends Controller
 {
-    use ExampleCode;
+    use CoreData;
 
     public function index(Request $request)
     {
@@ -33,7 +33,7 @@ class AgencyController extends Controller
             $myagency->agent = $this->user->with('meta')->wherein('ID', $agent_id)->get();
             $myagency->post_meta = $this->post->find($myagency->meta->user_agent_id);
             array_push($agent_id, $myagency->ID);
-            $myagency->properties = $this->post->published()->leftJoin('icl_translations', 'icl_translations.element_id', 'posts.ID')
+            $myagency->properties = $this->post->with('meta')->published()->leftJoin('icl_translations', 'icl_translations.element_id', 'posts.ID')
                 ->where('icl_translations.language_code', $request->lang)->where('post_type','estate_property')->where('post_author', '!=', 0)->wherein('post_author', $agent_id)->paginate(10);
             foreach ($myagency->properties as $properties) {
                 $properties->favorites = $this->option->where('option_name', 'favorites' . $request->user_id)->select('option_value')->first();
