@@ -25,13 +25,8 @@ trait ExampleCode
         $this->option = $option;
     }
 
-    public function AgencyResourceCollection($agency)
-    {
-       return AgencyResource::collection($agency);
-    }
-
     public function AgencyResource($agency)
     {
-        return new AgencyResource($agency);
+        return $agency instanceof \Illuminate\Pagination\LengthAwarePaginator ? AgencyResource::collection($agency) : ($agency instanceof \Illuminate\Database\Eloquent\Collection ? AgencyResource::collection($agency) : new AgencyResource($agency));
     }
 }

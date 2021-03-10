@@ -49,7 +49,7 @@ class AgencyController extends Controller
                 }
             }
         }
-        return response()->json(['status' => 1, 'data' => $this->AgencyResourceCollection($agency), 'message' => 'Message_Logout']);
+        return response()->json(['status' => 1, 'data' => $this->AgencyResource($agency), 'message' => 'Message_Logout']);
     }
 
     public function show(Request $request)
