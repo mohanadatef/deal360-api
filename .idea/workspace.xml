@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b23ae679-ca60-4d8f-9232-d866de7580dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Wordpress/SaveSearchController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Wordpress/SaveSearchController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/wordpress.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/wordpress.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Wordpress/AgencyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Wordpress/AgencyController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/jgrossi/corcel" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jgrossi/corcel" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../roshetta/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../roshetta/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../roshetta/.gitignore" afterDir="false" />
@@ -71,19 +70,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/wordpress.php">
+        <entry file="file://$PROJECT_DIR$/app/Traits/ExampleCode.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="709">
-              <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+            <state relative-caret-position="170">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/SaveSearchController.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/AgencyController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="658">
-              <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+            <state relative-caret-position="884">
+              <caret line="58" column="37" lean-forward="true" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -92,10 +91,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>add_review</find>
-      <find>is_rate</find>
-      <find>revi</find>
-      <find>unset</find>
       <find>favorite</find>
       <find>login</find>
       <find>prperty_typs</find>
@@ -122,6 +117,10 @@
       <find>getData</find>
       <find>$check</find>
       <find>getProperty</find>
+      <find>updateUserData</find>
+      <find>trms</find>
+      <find>terms</find>
+      <find>$i</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -130,7 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Mobile/FavoritesController.php" />
         <option value="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/routes/crm.php" />
@@ -164,23 +162,24 @@
         <option value="$PROJECT_DIR$/database/migrations/AreaDesc.php" />
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/AgentResource.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/Wordpress/AgentResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Wordpress/PropertiesController.php" />
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/Wordpress/PropertiesController.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/Wordpress/AgencyCrmResource.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/Wordpress/AgencyResource.php" />
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/AgencyResource.php" />
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/routes/wordpress.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/Wordpress/AgentCrmResource.php" />
-        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/API/UserController.php" />
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/Wordpress/AgencyController.php" />
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/AgencyCrmResource.php" />
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Resources/Wordpress/AgentCrmResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Wordpress/AgencyController.php" />
         <option value="$PROJECT_DIR$/app/Helpers/Helper.php" />
-        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Helpers/Helper.php" />
-        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/API/PropertiesController.php" />
-        <option value="$PROJECT_DIR$/routes/wordpress.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Wordpress/SaveSearchController.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/API/UserController.php" />
+        <option value="$PROJECT_DIR$/routes/wordpress.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/API/PropertiesController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Wordpress/PropertiesController.php" />
+        <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Helpers/Helper.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Wordpress/AgencyController.php" />
+        <option value="$PROJECT_DIR$/app/Traits/ExampleCode.php" />
       </list>
     </option>
   </component>
@@ -346,7 +345,8 @@
             <path>
               <item name="deal360" type="b2602c69:ProjectViewProjectNode" />
               <item name="deal360" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Traits" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -414,20 +414,22 @@
       <workItem from="1613996693408" duration="2887000" />
       <workItem from="1614001097923" duration="72221000" />
       <workItem from="1614428784561" duration="7166000" />
-      <workItem from="1614601813837" duration="51450000" />
+      <workItem from="1614601813837" duration="53689000" />
+      <workItem from="1615298449448" duration="5956000" />
+      <workItem from="1615363994117" duration="4444000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225068000" />
+    <option name="totallyTimeSpent" value="237707000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" order="0" sideWeight="0.5005599" side_tool="true" weight="0.16381419" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4994401" weight="0.16381419" />
-      <window_info id="Structure" order="2" sideWeight="0.5005599" side_tool="true" weight="0.16381419" />
+      <window_info id="Favorites" order="0" sideWeight="0.5016797" side_tool="true" weight="0.16381419" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49832028" weight="0.16564792" />
+      <window_info id="Structure" order="2" sideWeight="0.5016797" side_tool="true" weight="0.16381419" />
       <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32922733" />
@@ -446,12 +448,12 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="4" weight="0.16136919" />
+      <window_info anchor="right" id="Remote Host" order="4" weight="0.16259168" />
     </layout>
     <layout-to-restore>
-      <window_info id="Favorites" order="0" sideWeight="0.5005599" side_tool="true" weight="0.16381419" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4994401" visible="true" weight="0.16381419" />
-      <window_info id="Structure" order="2" sideWeight="0.5005599" side_tool="true" weight="0.16381419" />
+      <window_info id="Favorites" order="0" sideWeight="0.5016797" side_tool="true" weight="0.16381419" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49832028" visible="true" weight="0.16564792" />
+      <window_info id="Structure" order="2" sideWeight="0.5016797" side_tool="true" weight="0.16381419" />
       <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32922733" />
@@ -470,7 +472,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="4" visible="true" weight="0.16136919" />
+      <window_info anchor="right" id="Remote Host" order="4" weight="0.16259168" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,13 +500,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Models/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Crm/TasksController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -533,27 +528,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/Acl/2014_10_12_100000_create_password_resets_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/Acl/2014_10_12_100000_create_password_resets_table.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -561,13 +538,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2021_03_01_152358_permission.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2021_03_01_152358_permission.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/City.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -667,27 +638,7 @@
     <entry file="file://$PROJECT_DIR$/routes/mobile.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/FavoritesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/jgrossi/corcel/src/Model/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="118" column="9" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Wordpress/PostWordpress.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/FavoritesController.php" />
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/FaqsController.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -704,9 +655,6 @@
           <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/UserController.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Resources/Wordpress/AgentResource.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -743,13 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Wordpress/UserWordpress.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/jgrossi/corcel/src/Model/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -768,27 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="105" selection-start-line="8" selection-start-column="105" selection-end-line="8" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/AgencyController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="77" column="47" lean-forward="true" selection-start-line="72" selection-start-column="11" selection-end-line="77" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/PropertiesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="206" column="12" lean-forward="true" selection-start-line="206" selection-start-column="12" selection-end-line="206" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/wordpress.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="709">
-          <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -822,8 +742,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/SaveSearchController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+        <state relative-caret-position="510">
+          <caret line="30" column="28" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Wordpress/UserWordpress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Wordpress/PostWordpress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/jgrossi/corcel/src/Model/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/wordpress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/UserController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/PropertiesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Traits/ExampleCode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/AgencyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="58" column="37" lean-forward="true" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
         </state>
       </provider>
     </entry>

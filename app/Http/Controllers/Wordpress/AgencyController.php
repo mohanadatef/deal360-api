@@ -3,26 +3,16 @@
 namespace App\Http\Controllers\Wordpress;
 
 use App\Http\Resources\Wordpress\AgencyCrmResource;
-use App\Http\Resources\Wordpress\AgencyResource;
 use App\Http\Resources\Wordpress\AgentCrmResource;
 use App\Http\Resources\Wordpress\AgentResource;
-use App\Models\Wordpress\OptionWordpress;
-use App\Models\Wordpress\PostWordpress;
-use App\Models\Wordpress\UserWordpress;
+use App\Traits\ExampleCode;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
 class AgencyController extends Controller
 {
-    protected $post, $user, $option;
-
-    public function __construct(PostWordpress $post, UserWordpress $user, OptionWordpress $option)
-    {
-        $this->post = $post;
-        $this->user = $user;
-        $this->option = $option;
-    }
+    use ExampleCode;
 
     public function index(Request $request)
     {
@@ -59,7 +49,7 @@ class AgencyController extends Controller
                 }
             }
         }
-        return response()->json(['status' => 1, 'data' => AgencyResource::collection($agency), 'message' => 'Message_Logout']);
+        return response()->json(['status' => 1, 'data' => $this->AgencyResourceCollection($agency), 'message' => 'Message_Logout']);
     }
 
     public function show(Request $request)
@@ -94,7 +84,7 @@ class AgencyController extends Controller
             }
             if($agency->meta->user_estate_role == 3)
             {
-                return response()->json(['status' => 1, 'data' => new AgencyResource($agency), 'message' => 'Message_Done']);
+                return response()->json(['status' => 1, 'data' => $this->AgencyResource($agency), 'message' => 'Message_Done']);
             }
             elseif($agency->meta->user_estate_role == 2)
             {
@@ -134,7 +124,7 @@ class AgencyController extends Controller
             }
             if($agency->meta->user_estate_role == 3)
             {
-                return response()->json(['status' => 1, 'data' => new AgencyResource($agency), 'message' => 'Message_Done']);
+                return response()->json(['status' => 1, 'data' => $this->AgencyResource($agency), 'message' => 'Message_Done']);
             }
             elseif($agency->meta->user_estate_role == 2)
             {
