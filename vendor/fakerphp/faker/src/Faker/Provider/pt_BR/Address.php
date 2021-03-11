@@ -4,33 +4,33 @@ namespace Faker\Provider\pt_BR;
 
 class Address extends \Faker\Provider\Address
 {
-    protected static $cityPrefix = ['São', 'Porto', 'Vila', 'Santa'];
-    protected static $citySuffix = ['do Norte', 'do Leste', 'do Sul', 'd\'Oeste'];
-    protected static $streetPrefix = [
+    protected static $cityPrefix = array('São', 'Porto', 'Vila', 'Santa');
+    protected static $citySuffix = array('do Norte', 'do Leste', 'do Sul', 'd\'Oeste');
+    protected static $streetPrefix = array(
         'Av.', 'Avenida', 'R.', 'Rua', 'Travessa', 'Largo'
-    ];
-    protected static $buildingNumber = ['%####', '%###', '%##', '%#', '%'];
-    protected static $postcode = ['#####-###'];
-    protected static $state = [
+    );
+    protected static $buildingNumber = array('#####', '####', '###', '##', '#');
+    protected static $postcode = array('#####-###');
+    protected static $state = array(
         'Acre', 'Alagoas', 'Amapá', 'Amazonas', 'Bahia', 'Ceará',
         'Distrito Federal', 'Espírito Santo', 'Goiás', 'Maranhão',
         'Mato Grosso', 'Mato Grosso do Sul', 'Minas Gerais', 'Pará', 'Paraíba',
         'Paraná', 'Pernambuco', 'Piauí', 'Rio de Janeiro',
         'Rio Grande do Norte', 'Rio Grande do Sul', 'Rondônia', 'Roraima',
         'Santa Catarina', 'São Paulo', 'Sergipe', 'Tocantins'
-    ];
-    protected static $stateAbbr = [
+    );
+    protected static $stateAbbr = array(
         'AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS',
         'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC',
         'SP', 'SE', 'TO'
-    ];
-    protected static $region = [
+    );
+    protected static $region = array(
         'Centro-Oeste', 'Nordeste', 'Norte', 'Sudeste', 'Sul'
-    ];
-    protected static $regionAbbr = [
+    );
+    protected static $regionAbbr = array(
         'CO', 'N', 'NE', 'SE', 'S'
-    ];
-    protected static $country = [
+    );
+    protected static $country = array(
         'Afeganistão', 'África do Sul', 'Albânia', 'Alemanha', 'Andorra',
         'Angola', 'Antigua e Barbuda', 'Arabia Saudita', 'Argélia',
         'Argentina', 'Armênia', 'Austrália', 'Áustria', 'Azerbaijão',
@@ -44,7 +44,7 @@ class Address extends \Faker\Provider\Address
         'Djibouti', 'Domênica', 'Equador', 'Egito', 'El Salvador',
         'Emirados Árabes Unidos', 'Eritrea', 'Eslováquia', 'Eslovênia',
         'Espanha', 'Estados Unidos da América', 'Estônia', 'Etiópia',
-        'Filipinas', 'Finlândia', 'Fiji', 'França', 'Gabão', 'Gâmbia',
+        'Filipinas', 'Finlândia', 'Fiji','França', 'Gabão', 'Gâmbia',
         'Georgia', 'Gana', 'Granada', 'Grécia', 'Guatemala',
         'Guiné Equatorial', 'Guiné Bissau', 'Guiana', 'Haiti', 'Honduras',
         'Hungria', 'Índia', 'Indonésia', 'Iraque', 'Irlanda', 'Irã',
@@ -56,7 +56,7 @@ class Address extends \Faker\Provider\Address
         'Marrocos', 'Mauritânia', 'Micronésia', 'Moldávia', 'Mongólia',
         'Montenegro', 'Moçambique', 'México', 'Mônaco', 'Namíbia', 'Nauru',
         'Nepal', 'Nicarágua', 'Nigéria', 'Noruega', 'Nova Guiné',
-        'Nova Zelândia', 'Níger', 'Omã', 'Qatar', 'Quênia', 'Quirguistão',
+        'Nova Zelândia', 'Níger', 'Omã', 'Qatar', 'Quênia','Quirguistão',
         'Paquistão', 'Palaos', 'Panamá', 'Papua Nova Guiné', 'Paraguai',
         'Países Baixos', 'Peru', 'Polônia', 'Portugal', 'Reino Unido',
         'Reino Unido da Grã Bretanha e Irlanda do Norte',
@@ -71,30 +71,30 @@ class Address extends \Faker\Provider\Address
         'Tuvalu', 'Tunísia', 'Ucrânia', 'Uganda', 'Uruguai', 'Uzbequistão',
         'Vaticano', 'Vanuatu', 'Venezuela', 'Vietnã', 'Yemen', 'Zâmbia',
         'Zimbábue'
-    ];
-    protected static $cityFormats = [
+    );
+    protected static $cityFormats = array(
         '{{cityPrefix}} {{firstName}} {{citySuffix}}',
         '{{cityPrefix}} {{firstName}}',
         '{{firstName}} {{citySuffix}}',
         '{{lastName}} {{citySuffix}}',
-    ];
-    protected static $streetNameFormats = [
+    );
+    protected static $streetNameFormats = array(
         '{{streetPrefix}} {{firstName}}',
         '{{streetPrefix}} {{lastName}}',
         '{{streetPrefix}} {{firstName}} {{lastName}}'
-    ];
-    protected static $streetAddressFormats = [
+    );
+    protected static $streetAddressFormats = array(
         '{{streetName}}, {{buildingNumber}}',
         '{{streetName}}, {{buildingNumber}}. {{secondaryAddress}}',
-    ];
-    protected static $addressFormats = [
+    );
+    protected static $addressFormats = array(
         "{{postcode}}, {{streetAddress}}\n{{city}} - {{stateAbbr}}",
-    ];
-    protected static $secondaryAddressFormats = [
+    );
+    protected static $secondaryAddressFormats = array(
         'Bloco A', 'Bloco B', 'Bloco C', 'Bc. # Ap. ##', 'Bc. ## Ap. ##',
         '#º Andar', '##º Andar', '###º Andar', 'Apto #', 'Apto ##', 'Apto ###',
         'Apto ####', 'F', 'Fundos', 'Anexo'
-    ];
+    );
 
     /**
      * @example 'Avenida'
@@ -135,7 +135,7 @@ class Address extends \Faker\Provider\Address
     {
         return static::randomElement(static::$stateAbbr);
     }
-
+    
     /**
      * @example 'Nordeste'
      */
@@ -143,7 +143,7 @@ class Address extends \Faker\Provider\Address
     {
         return static::randomElement(static::$region);
     }
-
+    
     /**
      * @example 'NE'
      */

@@ -547,13 +547,23 @@ class LazyCollection implements Enumerable
     }
 
     /**
-     * Determine if the items is empty or not.
+     * Determine if the items are empty or not.
      *
      * @return bool
      */
     public function isEmpty()
     {
         return ! $this->getIterator()->valid();
+    }
+
+    /**
+     * Determine if the collection contains a single item.
+     *
+     * @return bool
+     */
+    public function containsOneItem()
+    {
+        return $this->take(2)->count() === 1;
     }
 
     /**

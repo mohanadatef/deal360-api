@@ -2,8 +2,8 @@
 
 namespace Faker\ORM\Propel2;
 
-use Propel\Generator\Model\PropelTypes;
-use Propel\Runtime\Map\ColumnMap;
+use \Propel\Generator\Model\PropelTypes;
+use \Propel\Runtime\Map\ColumnMap;
 
 class ColumnTypeGuesser
 {
@@ -50,26 +50,29 @@ class ColumnTypeGuesser
                     return $generator->randomNumber($size + 2) / 100;
                 };
             case PropelTypes::TINYINT:
-                return function () use ($generator) {
-                    return $generator->numberBetween(0, 127);
+                return function () {
+                    return mt_rand(0, 127);
                 };
             case PropelTypes::SMALLINT:
-                return function () use ($generator) {
-                    return $generator->numberBetween(0, 32767);
+                return function () {
+                    return mt_rand(0, 32767);
                 };
             case PropelTypes::INTEGER:
-                return function () use ($generator) {
-                    return $generator->numberBetween(0, 2147483647);
+                return function () {
+                    return mt_rand(0, intval('2147483647'));
                 };
             case PropelTypes::BIGINT:
-                return function () use ($generator) {
-                    return $generator->numberBetween(0, PHP_INT_MAX);
+                return function () {
+                    return mt_rand(0, intval('9223372036854775807'));
                 };
             case PropelTypes::FLOAT:
+                return function () {
+                    return mt_rand(0, intval('2147483647'))/mt_rand(1, intval('2147483647'));
+                };
             case PropelTypes::DOUBLE:
             case PropelTypes::REAL:
-                return function () use ($generator) {
-                    return $generator->randomFloat();
+                return function () {
+                    return mt_rand(0, intval('9223372036854775807'))/mt_rand(1, intval('9223372036854775807'));
                 };
             case PropelTypes::CHAR:
             case PropelTypes::VARCHAR:

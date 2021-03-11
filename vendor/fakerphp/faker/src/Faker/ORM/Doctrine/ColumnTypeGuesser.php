@@ -3,13 +3,15 @@
 namespace Faker\ORM\Doctrine;
 
 use Doctrine\Common\Persistence\Mapping\ClassMetadata;
-use Faker\Generator;
 
 class ColumnTypeGuesser
 {
     protected $generator;
 
-    public function __construct(Generator $generator)
+    /**
+     * @param \Faker\Generator $generator
+     */
+    public function __construct(\Faker\Generator $generator)
     {
         $this->generator = $generator;
     }
@@ -28,29 +30,29 @@ class ColumnTypeGuesser
                     return $generator->boolean;
                 };
             case 'decimal':
-                $size = $class->fieldMappings[$fieldName]['precision'] ?? 2;
+                $size = isset($class->fieldMappings[$fieldName]['precision']) ? $class->fieldMappings[$fieldName]['precision'] : 2;
 
                 return function () use ($generator, $size) {
                     return $generator->randomNumber($size + 2) / 100;
                 };
             case 'smallint':
-                return function () use ($generator) {
-                    return $generator->numberBetween(0, 65535);
+                return function () {
+                    return mt_rand(0, 65535);
                 };
             case 'integer':
-                return function () use ($generator) {
-                    return $generator->numberBetween(0, 2147483647);
+                return function () {
+                    return mt_rand(0, intval('2147483647'));
                 };
             case 'bigint':
-                return function () use ($generator) {
-                    return $generator->numberBetween(0, PHP_INT_MAX);
+                return function () {
+                    return mt_rand(0, intval('18446744073709551615'));
                 };
             case 'float':
-                return function () use ($generator) {
-                    return $generator->randomFloat();
+                return function () {
+                    return mt_rand(0, intval('4294967295'))/mt_rand(1, intval('4294967295'));
                 };
             case 'string':
-                $size = $class->fieldMappings[$fieldName]['length'] ?? 255;
+                $size = isset($class->fieldMappings[$fieldName]['length']) ? $class->fieldMappings[$fieldName]['length'] : 255;
 
                 return function () use ($generator, $size) {
                     return $generator->text($size);

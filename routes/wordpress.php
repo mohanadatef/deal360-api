@@ -39,6 +39,7 @@ Route::prefix('/properties')->group(function () {
 Route::prefix('/user')->group(function () {
     Route::post('/store', [UserController::class, 'store']);
     Route::get('/show', [UserController::class, 'show']);
+    Route::post('/login_socail_media', [UserController::class, 'socail_media']);
 });
 
 Route::prefix('/review')->group(function () {
