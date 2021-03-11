@@ -117,17 +117,6 @@ class UserController extends Controller
                     return response(['status' => 1, 'data' => new UserResource($user), 'message' => 'successful'], 200);
                 }
             }
-            if (isset($request->username)) {
-                $user = $this->user->where('user_login', $request->username)->first();
-                if ($user) {
-                    $user_meta = new UserMetaWordpress();
-                    $user_meta->user_id = $user->ID;
-                    $user_meta->meta_key = $account_type;
-                    $user_meta->meta_value = $request->account_id;
-                    $user_meta->save();
-                    return response(['status' => 1, 'data' => new UserResource($user), 'message' => 'successful'], 200);
-                }
-            }
             $this->user->user_login = $request->username;  //(string) The user's login username.
             $this->user->user_nicename = $request->username;  //(string) The user's login username.
             $this->user->display_name = $request->username;  //(string) The user's login username.

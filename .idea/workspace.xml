@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b23ae679-ca60-4d8f-9232-d866de7580dd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Wordpress/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Wordpress/UserController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,21 +32,15 @@
     <favorites_list name="deal360" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="98" column="67" selection-end-line="152" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="true">
-        <entry file="remoteDeploymentFS://&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/Wordpress/UserController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="110" column="28" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
+            <state relative-caret-position="277">
+              <caret line="118" column="13" selection-end-line="141" selection-end-column="1" />
+              <folding>
+                <element signature="e#50#96#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,8 +136,8 @@
         <option value="$PROJECT_DIR$/app/Traits/CoreData.php" />
         <option value="$PROJECT_DIR$/routes/wordpress.php" />
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/routes/wordpress.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Wordpress/UserController.php" />
         <option value="&lt;9282bd60-15e7-432f-aaaf-5e9fd316f9a4&gt;/crm/backend/app/Http/Controllers/Wordpress/UserController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Wordpress/UserController.php" />
       </list>
     </option>
   </component>
@@ -271,7 +266,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -309,6 +303,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -374,22 +369,21 @@
       <workItem from="1614601813837" duration="53689000" />
       <workItem from="1615298449448" duration="5956000" />
       <workItem from="1615363994117" duration="7011000" />
-      <workItem from="1615453476164" duration="6166000" />
+      <workItem from="1615453476164" duration="6837000" />
+      <workItem from="1615465603272" duration="40000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246440000" />
+    <option name="totallyTimeSpent" value="247151000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5016797" side_tool="true" weight="0.16381419" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49832028" visible="true" weight="0.16792738" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49832028" visible="true" weight="0.17019667" />
       <window_info id="Structure" order="2" sideWeight="0.5016797" side_tool="true" weight="0.16381419" />
       <window_info id="npm" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="RNConsole" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32922733" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -403,6 +397,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32922733" />
+      <window_info anchor="bottom" id="RNConsole" order="13" />
       <window_info anchor="right" id="Database" order="0" weight="0.3294621" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -741,8 +736,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wordpress/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="98" column="67" selection-end-line="152" selection-end-column="1" />
+        <state relative-caret-position="277">
+          <caret line="118" column="13" selection-end-line="141" selection-end-column="1" />
+          <folding>
+            <element signature="e#50#96#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
