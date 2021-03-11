@@ -78,27 +78,27 @@ class UserController extends Controller
     {
         $account = 0;
         if ($request->type == 'facebook') {
-            $user_id = $this->user_meta->where('facebook_id', $request->account_id)->first()->user_id;
-            if ($user_id) {
-                $user = $this->user->find($user_id);
+            $user_id = $this->user_meta->where('meta_key','facebook_id')->where('meta_value' ,$request->account_id)->first();
+            if ($user_id != null) {
+                $user = $this->user->find($user_id->user_id);
                 return response(['status' => 1, 'data' => new UserResource($user), 'message' => 'successful'], 200);
             } else {
                 $account = 1;
                 $account_type = 'facebook_id';
             }
         } elseif ($request->type == 'google') {
-            $user_id = $this->user_meta->where('google_id', $request->account_id)->first()->user_id;
-            if ($user_id) {
-                $user = $this->user->find($user_id);
+            $user_id = $this->user_meta->where('meta_key','google_id')->where('meta_value' , $request->account_id)->first();
+            if ($user_id != null) {
+                $user = $this->user->find($user_id->user_id);
                 return response(['status' => 1, 'data' => new UserResource($user), 'message' => 'successful'], 200);
             } else {
                 $account = 1;
                 $account_type = 'google_id';
             }
         } elseif ($request->type == 'apple') {
-            $user_id = $this->user_meta->where('apple_id', $request->account_id)->first()->user_id;
-            if ($user_id) {
-                $user = $this->user->find($user_id);
+            $user_id = $this->user_meta->where('meta_key','apple_id')->where('meta_value' , $request->account_id)->first();
+            if ($user_id != null) {
+                $user = $this->user->find($user_id->user_id);
                 return response(['status' => 1, 'data' => new UserResource($user), 'message' => 'successful'], 200);
             } else {
                 $account = 1;
@@ -107,7 +107,7 @@ class UserController extends Controller
         }
         if ($account == 1) {
             if (isset($request->email)) {
-                $user = $this->user->where('email', $request->email)->get();
+                $user = $this->user->where('user_email', $request->email)->first();
                 if ($user) {
                     $user_meta = new UserMetaWordpress();
                     $user_meta->user_id = $user->ID;
@@ -118,7 +118,7 @@ class UserController extends Controller
                 }
             }
             if (isset($request->username)) {
-                $user = $this->user->where('user_login', $request->username)->get();
+                $user = $this->user->where('user_login', $request->username)->first();
                 if ($user) {
                     $user_meta = new UserMetaWordpress();
                     $user_meta->user_id = $user->ID;
