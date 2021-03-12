@@ -51,16 +51,6 @@ class RouteServiceProvider extends ServiceProvider
                 ->middleware('api')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/wordpress.php'));
-
-            Route::prefix('crm')
-                ->middleware('api')
-                ->namespace($this->namespace)
-                ->group(base_path('routes/crm.php'));
-
-            Route::prefix('mobile')
-                ->middleware('api')
-                ->namespace($this->namespace)
-                ->group(base_path('routes/wordpress.php'));
         });
     }
 
