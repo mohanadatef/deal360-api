@@ -4,9 +4,7 @@ namespace App\Http\Controllers\Wordpress;
 
 use App\Http\Resources\Wordpress\UserResource;
 use App\Models\Wordpress\PostMetaWordpress;
-use App\Models\Wordpress\PostWordpress;
 use App\Models\Wordpress\UserMetaWordpress;
-use App\Models\Wordpress\UserWordpress;
 use App\Traits\CoreData;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -76,14 +74,12 @@ class UserController extends Controller
 
     public function socail_media(Request $request)
     {
-        $account = 0;
         if ($request->type == 'facebook') {
             $user_id = $this->user_meta->where('meta_key','facebook_id')->where('meta_value' ,$request->account_id)->first();
             if ($user_id != null) {
                 $user = $this->user->find($user_id->user_id);
                 return response(['status' => 1, 'data' => new UserResource($user), 'message' => 'successful'], 200);
             } else {
-                $account = 1;
                 $account_type = 'facebook_id';
             }
         } elseif ($request->type == 'google') {
@@ -92,7 +88,6 @@ class UserController extends Controller
                 $user = $this->user->find($user_id->user_id);
                 return response(['status' => 1, 'data' => new UserResource($user), 'message' => 'successful'], 200);
             } else {
-                $account = 1;
                 $account_type = 'google_id';
             }
         } elseif ($request->type == 'apple') {
@@ -101,11 +96,10 @@ class UserController extends Controller
                 $user = $this->user->find($user_id->user_id);
                 return response(['status' => 1, 'data' => new UserResource($user), 'message' => 'successful'], 200);
             } else {
-                $account = 1;
                 $account_type = 'apple_id';
             }
         }
-        if ($account == 1) {
+        if (isset($account_type)) {
             if (isset($request->email)) {
                 $user = $this->user->where('user_email', $request->email)->first();
                 if ($user) {
