@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b23ae679-ca60-4d8f-9232-d866de7580dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/example-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/example-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Wordpress/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Wordpress/UserController.php" afterDir="false" />
-    </list>
+    <list default="true" id="b23ae679-ca60-4d8f-9232-d866de7580dd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,9 +24,6 @@
     </option>
     <expand />
     <select />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="deal360" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -245,7 +238,7 @@
       <workItem from="1615465603272" duration="1469000" />
       <workItem from="1615472185101" duration="30000" />
       <workItem from="1615472298263" duration="43000" />
-      <workItem from="1615472405439" duration="1774000" />
+      <workItem from="1615472405439" duration="1966000" />
     </task>
     <servers />
   </component>
